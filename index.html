@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Quiz</h1>
+        <nav>
+            <a id="view-high-scores">View High Scores</a>
+        </nav>
+        <div id="timer">Time Left: 60s</div>
+    </header>
+    <main>
+        <section id="start-page" class="page">
+            <h2>Welcome to the JavaScript Quiz!</h2>
+            <button id="start-btn">Start Quiz</button>
+        </section>
+
+        <section id="quiz-page" class="page">
+            <h2>Question <span id="question-number"></span></h2>
+            <p id="question-text"></p>
+            <div id="choices"></div>
+        </section>
+
+        <section id="end-page" class="page">
+            <h2>Quiz Completed!</h2>
+            <p>Your final score is <span id="final-score"></span></p>
+            <form id="high-score-form">
+                <label for="initials">Enter your initials:</label>
+                <input type="text" id="initials" maxlength="3" required>
+                <button type="submit">Save Score</button>
+            </form>
+            <button id="start-over-btn">Start Over</button>
+        </section>
+
+        <section id="high-scores-page" class="page">
+            <h2>High Scores</h2>
+            <ul id="high-scores-list"></ul>
+            <button id="go-back-btn">Go Back</button>
+            <button id="clear-scores-btn">Clear Scores</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
